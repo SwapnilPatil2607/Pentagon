@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <link
-    rel="shortcut icon"
-    href="https://www.rememberthemilk.com/favicon3.ico?1573573620"
-    type="image/x-icon"
-  />
+      rel="shortcut icon"
+      href="https://www.rememberthemilk.com/favicon3.ico?1573573620"
+      type="image/x-icon"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasks</title>
@@ -15,91 +15,8 @@
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="dashboard.css">
   </head>
-  <style>
-      body{
-          margin: 0px;
-          padding: 0px;
-          background-color:#bee5ff ;
-      }
-    nav {
-      background-color: #0088e2;
-      display: flex;
-    }
-    .burger div {
-      width: 20px;
-      height: 3px;
-      background-color: white;
-      margin: 3px;
-    }
-    .burger {
-      margin: 10px 170px 10px 10px;
-    }
-    .imp-icons {
-      margin-left: 730px;
-    }
-    .imp-icons img {
-      height: 20px;
-      margin: 10px;
-    }
-    #searchbar {
-      margin-top: 3px;
-      border: none;
-      border-radius: 3px;
-      padding: 5px 55px;
-      background-color: #63bbf6;
-    }
-    #searchbar:hover {
-      transition: 400ms;
-      background-color: white;
-    }
-    .container{
-        margin: 0px;
-        padding: 0px;
-        padding-top: 10px;
-        background-color:#bee5ff ;
-        display: flex;
-        width: 1600px;
-    }
-    #logo {
-      height: 80px;
-    }
-    .logo-div {
-      cursor: pointer;
-      display: flex;
-    }
-    .logo-div h5 {
-      color: #0088e2;
-      line-height: 23px;
-      padding-top: 35px;
-      font-family: "Nerko One", cursive;
-      font-family: "Patrick Hand", cursive;
-      font-weight: bold;
-    }
-    li{
-        list-style: none;
-    }
-    ul li ul{
-        display: none;
-        padding: 0px;
-    }
-  #tasks:hover #task-options{
-    transition: 2s;
-    display:block;
-  }
-  .add-tasks{
-      background-color: aliceblue;
-      border-radius: 5px;
-      width: 650px;
-  }
-  .all-tasks{
-      margin: 0px;
-  }
-  #task-bar{
-     margin: 20px;
-     padding: 0px 200px;
-  }
-  </style>
   <body>
     <nav>
       <div class="burger">
@@ -130,27 +47,27 @@
             the milk
           </h5>
         </div>
-            <ul>
-                <li id="tasks">All Tasks
-                    <ul id="task-options">
-                        <li>Today</li>
-                        <li>Tommorow</li>
-                        <li>This week</li>
-                        <li>Given To others</li>
-                        <li>Trash</li>
-                    </ul>
-                </li>
+        <ul>
+          <li id="tasks">
+            All Tasks
+            <ul id="task-options">
+              <li>Today</li>
+              <li>Tommorow</li>
+              <li>This week</li>
+              <li>Given To others</li>
+              <li>Trash</li>
             </ul>
-            <ul>
-                <li id="lists">Lists
-                </li>
-            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li id="lists">Lists</li>
+        </ul>
       </div>
       <div class="col add-tasks">
-          <input id="task-bar" type="text" placeholder="Add A Task">
+        <input id="task-bar" type="text" placeholder="Add A Task" />
       </div>
       <div class="col all-tasks">
-          <h3>All Tasks</h3>
+        <h3>All Tasks</h3>
       </div>
     </div>
 
