@@ -113,3 +113,14 @@ body {
     margin: 20px;
     padding: 0px 200px;
   }
+  @media (max-width: 1200px) { 
+    .imp-icons{
+      margin-left: 100px;
+    }
+   }
+   @media (max-width: 900px) { 
+    #task-bar {
+      margin: 20px;
+      padding: 0px 100px;
+    }
+   }
