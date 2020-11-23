@@ -60,14 +60,28 @@
           </li>
         </ul>
         <ul>
-          <li id="lists">Lists</li>
+          <li id="lists">Lists<button id="add">+</button></li>
         </ul>
       </div>
       <div class="col add-tasks">
+          <div class="row">
+              <div class="col-1 box"><input type="checkbox"></div>
+              <div class="col-1 box"><h1>...</h1></div>
+          </div>
         <input id="task-bar" type="text" placeholder="Add A Task" />
       </div>
       <div class="col all-tasks">
-        <h3>All Tasks</h3>
+        <h5>All Tasks</h5>
+        <div class="row">
+            <div class="col box2">
+                <p>0</p>
+                <b>Tasks</b>
+            </div>
+            <div class="col box2">
+                <p>0</p>
+                <b>Tasks completed</b>
+            </div>
+        </div>
       </div>
     </div>
 

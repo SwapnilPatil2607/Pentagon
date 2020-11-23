@@ -23,6 +23,10 @@ body {
     height: 20px;
     margin: 10px;
   }
+  .imp-icons img:hover{
+      background-color: #006fb9;
+      cursor: pointer;
+  }
   #searchbar {
     margin-top: 3px;
     border: none;
@@ -63,8 +67,19 @@ body {
   ul li ul {
     display: none;
     padding: 0px;
+    padding-top: 0px;
   }
-
+  #add{
+      padding: 0px 5px;
+      border: 1px solid  #0088e2;
+      background-color: #bee5ff;
+      color: #0088e2;
+      margin-left: 80px;
+     }
+    #add:hover{
+        background-color: #0088e2;
+        color: white;
+    }
   #tasks:hover #task-options {
     transition: 2s;
     display: block;
@@ -76,6 +91,23 @@ body {
   }
   .all-tasks {
     margin: 0px;
+  }
+  .box{
+      border: 1px solid rgb(146, 146, 146);
+      padding: 0px;
+      margin: 20px;
+  }
+  .box input{
+    margin: 20px;
+  }
+  .box h1{
+      margin-left: 10px;
+  }
+  .box2{
+      background-color:#9bd7ff77;
+      margin: 5px;
+      border-radius: 5px;
+      padding: 10px;
   }
   #task-bar {
     margin: 20px;
