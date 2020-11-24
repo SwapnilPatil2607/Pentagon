@@ -1,3 +1,69 @@
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #fff;
+}
+.tour-header {
+  background-color: #0060bf;
+ 
+}
+
+.tour-header .container .row{
+  padding:20px;
+ 
+}
+.tour-header .container{
+  max-width:1000px;
+ 
+}
+.tour-header{
+  padding:30px;
+}
+.tour-header-image{
+  background-image:url("https://www.rememberthemilk.com/img/header_tour.png?1553750185");
+  background-repeat: no-repeat;
+  background-size:250px;
+  width:250px;
+  height:110px;
+  background-size:contain;
+  height:125px;
+  position:absolute;
+  margin-top:-100px;
+  margin-left:65%;
+  animation-name:slider;
+  animation-duration:2s;
+  
+}
+
+
+@keyframes slider{
+  0%{margin-left:80%}
+   /* 25%{margin-left:60%}
+  50%{margin-left:60%}   */
+  100%{margin-left:65%}
+}
+
+
+
+.tour-header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+ 
+}
+
+.tour-header h2 {
+  font-size: 22px;
+  font-weight: 500;
+  opacity: .65;
+  margin: 0;
+  color: #fff;
+  padding-top: 3px;
+}
+
 .tour-hello {
     background-color: #5bb84d;
   }
