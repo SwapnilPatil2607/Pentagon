@@ -144,6 +144,10 @@ ul li ul {
   right: 0px;
   background-color: #0088e2;
   cursor: pointer;
+  display: none;
+}
+#seticon:hover #settings{
+  display:block;
 }
 @media (max-width: 1200px) {
   .imp-icons {
