@@ -159,36 +159,91 @@
   
 
 }
+.tour-organize{
+  background-color: #6a4ca6;
+  padding:30px;
+}
 .tour-organize-image{
-    width:300px;
+    width:275px;
 }
 .tour-organize-image div{
     border-radius:3px;
     text-align:center;
     padding:5px;
-    border:1px solid black;
+    color:white;
+    font-size:20px;
+    width:100px;
+    font-weight:700;
    
     
 }
 .tour-organize-work{
-    width:100px;
-    
-    color:white;
+  
+    background-color:rgb(236, 112, 0)
+
     
 }
 
 .tour-organize-phone{
-    width:100px;
+    
     float:left;
+    background-color:rgb(51, 127, 204)
 }
 
 .tour-organize-email{
-    width:100px;
+    
+    background-color:rgb(115, 163, 65)
    
 
 }
 
 .tour-organize-bananas{
-    width:100px;
+   
     clear:left;
+    background-color:rgb(82, 41, 163)
+}
+
+.rainbow{
+  height:10px;
+  background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkOWRlMCIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjNGQ5ZGUwIi8+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNlMTU1NTQiLz48c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iI2UxNTU1NCIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZTFiYzI5Ii8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNlMWJjMjkiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzNiYjI3MyIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjM2JiMjczIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiM3NzY4YWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NzY4YWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+  background-repeat:repeat;
+  background-size:200px;
+  border:1px solid lightblue;
+}
+
+.tour-subtasks-image{
+  background-image: url('https://www.rememberthemilk.com/img/tour_subtasks.png?1553750185');
+  background-repeat: no-repeat;
+  background-size: 460px auto;
+  width: 100%;
+  height: auto;
+ 
+  background-size: contain;
+  background-position: left;
+  margin: 0 auto;
+  height:200px;
+}
+
+.tour-subtasks{
+   padding:45px;
+}
+
+.tour-subtasks-description {
+  color:rgb(61,61,61)
+}
+
+.tour-thingsdone {
+  background-color: #5bb84d;
+}
+
+.tour-thingsdone-image {
+  background-image: url('https://www.rememberthemilk.com/img/tour_hello_steve.png?1553750185');
+  background-repeat: no-repeat;
+  background-size: 165px auto;
+  width: 100%;
+  height: auto;
+  max-width: 165px;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
 }
