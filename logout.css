@@ -51,8 +51,13 @@
           }
     
           .container-fluid{
-            height:400px;
+            height:450px;
             background-color: #9b59b6;
+        }
+        .tag{
+          
+          border-radius:50%;
+
         }
          
           @media screen and (max-width: 1000px) {
