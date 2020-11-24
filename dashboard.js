@@ -1,6 +1,8 @@
 window.addEventListener("load", function () {
   var add_task = document.getElementById("add-from-taskbar");
   add_task.addEventListener("click", add_from_taskbar);
+  var setting=document.getElementById("signout");
+  setting.addEventListener("click",signout);
 });
 var countt = 0;
 var countcomp = 0;
@@ -38,4 +40,7 @@ function deltask() {
   var task_count = document.getElementById("count");
   countt--;
   task_count.textContent = countt;
+}
+function signout(){
+  location.assign("index.html");
 }

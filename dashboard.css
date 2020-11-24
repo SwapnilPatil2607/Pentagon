@@ -138,6 +138,13 @@ ul li ul {
 #task-container {
   margin-top: 30px;
 }
+#settings {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: #0088e2;
+  cursor: pointer;
+}
 @media (max-width: 1200px) {
   .imp-icons {
     margin-left: 100px;
