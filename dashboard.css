@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #bee5ff;
+    background-color: #e2f3ff;
   }
   nav {
     background-color: #0088e2;
@@ -42,7 +42,7 @@ body {
     margin: 0px;
     padding: 0px;
     padding-top: 10px;
-    background-color: #bee5ff;
+    background-color: #e2f3ff;
     display: flex;
     width: 1600px;
   }
@@ -72,7 +72,7 @@ body {
   #add{
       padding: 0px 5px;
       border: 1px solid  #0088e2;
-      background-color: #bee5ff;
+      background-color:  #e2f3ff;
       color: #0088e2;
       margin-left: 80px;
      }
@@ -113,6 +113,31 @@ body {
     margin: 20px;
     padding: 0px 200px;
   }
+  #add-from-taskbar{
+    border: none;
+    border-radius: 3px;
+    background-color:#0088e2 ;
+    color :white;
+    padding: 0px 14px;
+   float: right;
+  }
+  #add-from-taskbar:hover{
+    background-color:#004370;
+  }
+  .del{
+    border: none;
+    border-radius: 3px;
+    background-color:#0088e2 ;
+    color :white;
+    padding: 0px 14px;
+   float: right;
+  }
+  .del:hover{
+    background-color:#004370;
+  }
+  #task-container{
+    margin-top: 30px;
+  }
   @media (max-width: 1200px) { 
     .imp-icons{
       margin-left: 100px;
@@ -122,5 +147,10 @@ body {
     #task-bar {
       margin: 20px;
       padding: 0px 100px;
+    }
+   }
+   @media (max-width: 600px) { 
+    .burger {
+      margin: 10px;
     }
    }

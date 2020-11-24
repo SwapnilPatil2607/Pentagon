@@ -69,12 +69,14 @@
               <div class="col-1 box"><h1>...</h1></div>
           </div>
         <input id="task-bar" type="text" placeholder="Add A Task" />
+        <button id="add-from-taskbar">Add Task</button>
+        <div id="task-container"></div>
       </div>
       <div class="col all-tasks">
         <h5>All Tasks</h5>
         <div class="row">
             <div class="col box2">
-                <p>0</p>
+                <p id="count">0</p>
                 <b>Tasks</b>
             </div>
             <div class="col box2">
@@ -84,7 +86,7 @@
         </div>
       </div>
     </div>
-
+<script type="text/javascript" src="dashboard.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
