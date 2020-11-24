@@ -20,11 +20,12 @@ console.log(userName)
     var payload = {
         name:userName,
         password:password,
+        email:email
     }
     userData.push(payload)
     localStorage.setItem('users',JSON.stringify(userData))
    
    
-
+    verifydata()
 }
 
