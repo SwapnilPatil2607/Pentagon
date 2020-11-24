@@ -1,156 +1,156 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #e2f3ff;
-  }
-  nav {
-    background-color: #0088e2;
-    display: flex;
-  }
-  .burger div {
-    width: 20px;
-    height: 3px;
-    background-color: white;
-    margin: 3px;
-  }
-  .burger {
-    margin: 10px 170px 10px 10px;
-  }
+  margin: 0px;
+  padding: 0px;
+  background-color: #e2f3ff;
+}
+nav {
+  background-color: #0088e2;
+  display: flex;
+}
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  margin: 3px;
+}
+.burger {
+  margin: 10px 170px 10px 10px;
+}
+.imp-icons {
+  margin-left: 730px;
+}
+.imp-icons img {
+  height: 20px;
+  margin: 10px;
+}
+.imp-icons img:hover {
+  background-color: #006fb9;
+  cursor: pointer;
+}
+#searchbar {
+  margin-top: 3px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 55px;
+  background-color: #63bbf6;
+}
+#searchbar:hover {
+  transition: 400ms;
+  background-color: white;
+}
+.container {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  background-color: #e2f3ff;
+  display: flex;
+  width: 1600px;
+}
+#logo {
+  height: 80px;
+}
+.logo-div {
+  cursor: pointer;
+  display: flex;
+}
+.logo-div h5 {
+  color: #0088e2;
+  line-height: 23px;
+  padding-top: 35px;
+  font-family: "Nerko One", cursive;
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+}
+ul li ul {
+  display: none;
+  padding: 0px;
+  padding-top: 0px;
+}
+#add {
+  padding: 0px 5px;
+  border: 1px solid #0088e2;
+  background-color: #e2f3ff;
+  color: #0088e2;
+  margin-left: 80px;
+}
+#add:hover {
+  background-color: #0088e2;
+  color: white;
+}
+#tasks:hover #task-options {
+  transition: 2s;
+  display: block;
+}
+.add-tasks {
+  background-color: aliceblue;
+  border-radius: 5px;
+  width: 650px;
+}
+.all-tasks {
+  margin: 0px;
+}
+.box {
+  border: 1px solid rgb(146, 146, 146);
+  padding: 0px;
+  margin: 20px;
+}
+.box input {
+  margin: 20px;
+}
+.box h1 {
+  margin-left: 10px;
+}
+.box2 {
+  background-color: #9bd7ff77;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 10px;
+}
+#task-bar {
+  margin: 20px;
+  padding: 0px 200px;
+}
+#add-from-taskbar {
+  border: none;
+  border-radius: 3px;
+  background-color: #0088e2;
+  color: white;
+  padding: 0px 14px;
+  float: right;
+}
+#add-from-taskbar:hover {
+  background-color: #004370;
+}
+.del {
+  border: none;
+  border-radius: 3px;
+  background-color: #0088e2;
+  color: white;
+  padding: 0px 14px;
+  float: right;
+}
+.del:hover {
+  background-color: #004370;
+}
+#task-container {
+  margin-top: 30px;
+}
+@media (max-width: 1200px) {
   .imp-icons {
-    margin-left: 730px;
+    margin-left: 100px;
   }
-  .imp-icons img {
-    height: 20px;
-    margin: 10px;
-  }
-  .imp-icons img:hover{
-      background-color: #006fb9;
-      cursor: pointer;
-  }
-  #searchbar {
-    margin-top: 3px;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 55px;
-    background-color: #63bbf6;
-  }
-  #searchbar:hover {
-    transition: 400ms;
-    background-color: white;
-  }
-  .container {
-    margin: 0px;
-    padding: 0px;
-    padding-top: 10px;
-    background-color: #e2f3ff;
-    display: flex;
-    width: 1600px;
-  }
-  #logo {
-    height: 80px;
-  }
-  .logo-div {
-    cursor: pointer;
-    display: flex;
-  }
-  .logo-div h5 {
-    color: #0088e2;
-    line-height: 23px;
-    padding-top: 35px;
-    font-family: "Nerko One", cursive;
-    font-family: "Patrick Hand", cursive;
-    font-weight: bold;
-  }
-  li {
-    list-style: none;
-  }
-  ul li ul {
-    display: none;
-    padding: 0px;
-    padding-top: 0px;
-  }
-  #add{
-      padding: 0px 5px;
-      border: 1px solid  #0088e2;
-      background-color:  #e2f3ff;
-      color: #0088e2;
-      margin-left: 80px;
-     }
-    #add:hover{
-        background-color: #0088e2;
-        color: white;
-    }
-  #tasks:hover #task-options {
-    transition: 2s;
-    display: block;
-  }
-  .add-tasks {
-    background-color: aliceblue;
-    border-radius: 5px;
-    width: 650px;
-  }
-  .all-tasks {
-    margin: 0px;
-  }
-  .box{
-      border: 1px solid rgb(146, 146, 146);
-      padding: 0px;
-      margin: 20px;
-  }
-  .box input{
-    margin: 20px;
-  }
-  .box h1{
-      margin-left: 10px;
-  }
-  .box2{
-      background-color:#9bd7ff77;
-      margin: 5px;
-      border-radius: 5px;
-      padding: 10px;
-  }
+}
+@media (max-width: 900px) {
   #task-bar {
     margin: 20px;
-    padding: 0px 200px;
+    padding: 0px 100px;
   }
-  #add-from-taskbar{
-    border: none;
-    border-radius: 3px;
-    background-color:#0088e2 ;
-    color :white;
-    padding: 0px 14px;
-   float: right;
+}
+@media (max-width: 600px) {
+  .burger {
+    margin: 10px;
   }
-  #add-from-taskbar:hover{
-    background-color:#004370;
-  }
-  .del{
-    border: none;
-    border-radius: 3px;
-    background-color:#0088e2 ;
-    color :white;
-    padding: 0px 14px;
-   float: right;
-  }
-  .del:hover{
-    background-color:#004370;
-  }
-  #task-container{
-    margin-top: 30px;
-  }
-  @media (max-width: 1200px) { 
-    .imp-icons{
-      margin-left: 100px;
-    }
-   }
-   @media (max-width: 900px) { 
-    #task-bar {
-      margin: 20px;
-      padding: 0px 100px;
-    }
-   }
-   @media (max-width: 600px) { 
-    .burger {
-      margin: 10px;
-    }
-   }
+}
