@@ -1,6 +1,9 @@
 window.addEventListener('load',function(){
  var login=document.getElementById("login")
  login.addEventListener('click',handleData)
+
+ var signup=document.getElementById('signup')
+ signup.addEventListener('click',changePage)
 })
 
 var data=[]
@@ -41,5 +44,7 @@ function handleResponse(str){
     cont.appendChild(para)
 }
 
-
+function changePage(){
+    location.href="signup.html"
+}
 
