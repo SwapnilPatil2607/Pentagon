@@ -200,50 +200,112 @@
 .tour-organize-bananas{
    
     clear:left;
-    background-color:rgb(82, 41, 163)
 }
 
-.rainbow{
-  height:10px;
-  background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRkOWRlMCIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjNGQ5ZGUwIi8+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNlMTU1NTQiLz48c3RvcCBvZmZzZXQ9IjQwJSIgc3RvcC1jb2xvcj0iI2UxNTU1NCIvPjxzdG9wIG9mZnNldD0iNDAlIiBzdG9wLWNvbG9yPSIjZTFiYzI5Ii8+PHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNlMWJjMjkiLz48c3RvcCBvZmZzZXQ9IjYwJSIgc3RvcC1jb2xvcj0iIzNiYjI3MyIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjM2JiMjczIi8+PHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiM3NzY4YWUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NzY4YWUiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
-  background-repeat:repeat;
-  background-size:200px;
-  border:1px solid lightblue;
-}
-
-.tour-subtasks-image{
-  background-image: url('https://www.rememberthemilk.com/img/tour_subtasks.png?1553750185');
-  background-repeat: no-repeat;
-  background-size: 460px auto;
+/* navbar */
+nav {
+  color: white;
+  display: flex;
+  padding: 10px 150px;
+  border-bottom: 0.5px solid #864d9c;
+  background-color: #9b59b6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
-  height: auto;
- 
-  background-size: contain;
-  background-position: left;
-  margin: 0 auto;
-  height:200px;
 }
 
-.tour-subtasks{
-   padding:45px;
+#logo {
+  height: 80px;
 }
+.logo-div {
+  cursor: pointer;
+  display: flex;
+}
+.logo-div h3 {
+  line-height: 23px;
+  padding-top: 35px;
+  font-family: "Nerko One", cursive;
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+}
+.options-div {
+  padding: 40px 70px;
+}
+.options-div a {
+  opacity: 0.7;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: medium;
+  padding: 10px 20px;
+}
+.options-div a:hover {
+  opacity: 1;
+}
+#sign-up {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 3px;
+}
+/* navbar */
 
-.tour-subtasks-description {
-  color:rgb(61,61,61)
+/* footer */
+.footer ul li{
+  list-style: none;
 }
+.footer ul li:hover{
+ background-color: rgba(0, 0, 0, 0.329);
+ border-radius: 5px;
+}
+.footer{
+   padding: 100px 100px 0px 100px;
+}
+.social{
+  display: flex;
+}
+.social img{
+   height: 30px;
+ margin: 10px
+}
+/* footer */
 
-.tour-thingsdone {
-  background-color: #5bb84d;
+/* responsive */
+@media screen and (max-width: 900px) {
+  .footer{
+    padding: 10px;
 }
-
-.tour-thingsdone-image {
-  background-image: url('https://www.rememberthemilk.com/img/tour_hello_steve.png?1553750185');
-  background-repeat: no-repeat;
-  background-size: 165px auto;
-  width: 100%;
-  height: auto;
-  max-width: 165px;
-  background-size: contain;
-  background-position: center;
-  margin: 0 auto;
 }
+@media screen and (max-width: 1000px) {
+  nav {
+    padding: 10px 10px;
+  }
+  .options-div{
+      padding: 50px 10px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .options-div {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 10px 10px;
+  }
+  .options-div {
+    padding: 10px 10px;
+  }
+  #logo {
+    height: 60px;
+  }
+  .logo-div h3 {
+  line-height: 23px;
+  padding-top: 15px;
+  font-family: "Nerko One", cursive;
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+}
+}
+/* responsive */
