@@ -1,6 +1,9 @@
 window.addEventListener('load',function(){
     let btn=document.getElementById('createData')
     btn.addEventListener('click',createData)
+
+    let login=document.getElementById('login')
+    login.addEventListener('click',changePage)
 })
 
 var userData=[]
@@ -28,3 +31,6 @@ console.log(userName)
 
 }
 
+function changePage(){
+    location.href="login.html"
+}
