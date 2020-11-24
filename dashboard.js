@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+
   var add_task = document.getElementById("add-from-taskbar");
   add_task.addEventListener("click", add_from_taskbar);
   var setting=document.getElementById("signout");
@@ -11,6 +12,8 @@ function add_from_taskbar() {
   if (task_input != "") {
     var label = document.createElement("label");
     label.textContent = task_input;
+    var task_input = document.getElementById("task-bar");
+    task_input.value="";
     var br = document.createElement("br");
     var checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
