@@ -1,0 +1,88 @@
+
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+          nav {
+            color: white;
+            display: flex;
+            padding: 10px 150px;
+            border-bottom: 0.5px solid #864d9c;
+            background-color: #9b59b6;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+          }
+        
+          #logo {
+            height: 80px;
+          }
+          .logo-div {
+            cursor: pointer;
+            display: flex;
+          }
+          .logo-div h3 {
+            line-height: 23px;
+            padding-top: 35px;
+            font-family: "Nerko One", cursive;
+            font-family: "Patrick Hand", cursive;
+            font-weight: bold;
+          }
+          .options-div {
+            padding: 40px 70px;
+          }
+          .options-div a {
+            opacity: 0.7;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: medium;
+            padding: 10px 20px;
+          }
+          .options-div a:hover {
+            opacity: 1;
+          }
+          #sign-up {
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 3px;
+          }
+    
+          .container-fluid{
+            height:400px;
+            background-color: #9b59b6;
+        }
+         
+          @media screen and (max-width: 1000px) {
+            nav {
+              padding: 10px 10px;
+            }
+            .options-div{
+                padding: 50px 10px;
+            }
+          }
+          @media screen and (max-width: 750px) {
+            .options-div {
+              display: none;
+            }
+          }
+          @media screen and (max-width: 600px) {
+            nav {
+              padding: 10px 10px;
+            }
+            .options-div {
+              padding: 10px 10px;
+            }
+            #logo {
+              height: 60px;
+            }
+            .logo-div h3 {
+            line-height: 23px;
+            padding-top: 15px;
+            font-family: "Nerko One", cursive;
+            font-family: "Patrick Hand", cursive;
+            font-weight: bold;
+          }
+          }
