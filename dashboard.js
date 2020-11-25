@@ -1,4 +1,6 @@
 window.addEventListener("load", function () {
+  var selall=document.getElementById("selall");
+  selall.addEventListener("click",select_all);
   var delsel = document.getElementById("delsel");
   delsel.addEventListener("click", selected);
   var add_task = document.getElementById("add-from-taskbar");
@@ -67,5 +69,11 @@ var stack=[];
       countt--;
       task_count.textContent = countt;
   }
-  
+}
+function select_all(){
+  var all=document.getElementsByClassName("del");
+  for(var i=0;i<all.length;i++){
+    all[i].previousSibling.previousSibling.setAttribute("checked","checked");
+    console.log( all[i].previousSibling.previousSibling);
+  }
 }
