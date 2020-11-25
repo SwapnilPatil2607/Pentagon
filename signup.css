@@ -22,3 +22,21 @@
 .textColor{
     color:rgb(141, 173, 248)
 }
+
+
+
+.nav-signup-logo {
+    background-image: url('https://www.rememberthemilk.com/img/logo3.png?1553750185');
+    background-repeat: no-repeat;
+    background-size: 179px auto;
+    width: 179px;
+    height: 83px;
+    display: inline-block;
+    margin: 12px 0 0 2px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .bor{
+      border:1px solid black;
+  }
