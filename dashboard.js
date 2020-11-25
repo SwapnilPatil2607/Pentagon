@@ -72,8 +72,16 @@ var stack=[];
 }
 function select_all(){
   var all=document.getElementsByClassName("del");
+  if(event.target.checked==true){
+    for(var i=0;i<all.length;i++){
+      all[i].previousSibling.previousSibling.setAttribute("checked","");
+      console.log( all[i].previousSibling.previousSibling);
+    }
+  }
+ if(event.target.checked==false){
   for(var i=0;i<all.length;i++){
-    all[i].previousSibling.previousSibling.setAttribute("checked","checked");
+    all[i].previousSibling.previousSibling.removeAttribute("checked");
     console.log( all[i].previousSibling.previousSibling);
   }
+ }
 }
