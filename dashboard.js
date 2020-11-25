@@ -26,8 +26,12 @@ function add_from_taskbar() {
     var del = document.createElement("button");
     del.textContent = "Delete";
     del.setAttribute("class", "del");
+    var edit = document.createElement("button");
+    edit.textContent = "Edit";
+    edit.setAttribute("class", "del");
+    edit.addEventListener("click",editing);
     var pertask = document.createElement("div");
-    pertask.append(checkbox, label, del);
+    pertask.append(checkbox, label, del,edit);
     var container = document.getElementById("task-container");
     container.appendChild(pertask);
     del.addEventListener("click", deltask);
@@ -84,4 +88,21 @@ function select_all(){
     console.log( all[i].previousSibling.previousSibling);
   }
  }
+}
+
+function editing(){
+  event.target.previousSibling.previousSibling.remove()
+  var input=document.createElement("input");
+  input.setAttribute("type","text");
+  var save=document.createElement("button");
+  save.textContent="Save";
+  save.addEventListener("click",savechanges);
+  save.setAttribute("class","del");
+  event.target.parentNode.append(input,save);
+  event.target.remove();
+}
+function savechanges(){
+  if(event.target.previousSibling.value1!=""){
+    console.log(event.target.previousSibling.value.length);
+  }
 }

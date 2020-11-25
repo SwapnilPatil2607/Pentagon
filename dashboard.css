@@ -131,6 +131,7 @@ ul li ul {
   color: white;
   padding: 0px 14px;
   float: right;
+  margin-right: 5px;
 }
 .del:hover {
   background-color: #004370;
@@ -150,8 +151,12 @@ ul li ul {
   border-radius: 3px;
   background-color: #0088e2;
   color: white;
-  padding: 0px 34px;
+  padding: 0px 40px;
   margin-top: 20px;
+}
+#delsel:hover{
+  transition: 400ms;
+  background-color: #004370;
 }
 @media (max-width: 1200px) {
   .imp-icons {
