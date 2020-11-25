@@ -108,8 +108,20 @@ function savechanges(){
       event.target.previousSibling.style.border="1px solid red";
       break;
     }
-    if(inputval[i]+inputval[i+1]=="  "){
+   else if(inputval[i]+inputval[i+1]=="  "){
       event.target.previousSibling.style.border="1px solid red";
+      break;
+    }
+    else {
+      var label=document.createElement("label");
+      label.textContent=inputval;
+      event.target.previousSibling.remove();
+      var edit = document.createElement("button");
+      edit.textContent = "Edit";
+      edit.setAttribute("class", "del");
+      edit.addEventListener("click",editing);
+      event.target.parentNode.append(label,edit);
+      event.target.remove();
       break;
     }
   }
