@@ -1,9 +1,10 @@
 window.addEventListener("load", function () {
-
+  var delsel = document.getElementById("delsel");
+  delsel.addEventListener("click", selected);
   var add_task = document.getElementById("add-from-taskbar");
   add_task.addEventListener("click", add_from_taskbar);
-  var setting=document.getElementById("signout");
-  setting.addEventListener("click",signout);
+  var setting = document.getElementById("signout");
+  setting.addEventListener("click", signout);
 });
 var countt = 0;
 var countcomp = 0;
@@ -13,7 +14,7 @@ function add_from_taskbar() {
     var label = document.createElement("label");
     label.textContent = task_input;
     var task_input = document.getElementById("task-bar");
-    task_input.value="";
+    task_input.value = "";
     var br = document.createElement("br");
     var checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
@@ -31,12 +32,11 @@ function add_from_taskbar() {
   }
 }
 function deltask() {
-  if (event.target.previousSibling.previousSibling.checked==true) {
+  if (event.target.previousSibling.previousSibling.checked == true) {
     countcomp++;
     var comp = document.getElementById("completed");
     comp.textContent = countcomp;
     event.target.parentNode.remove();
-   
   } else {
     event.target.parentNode.remove();
   }
@@ -44,6 +44,22 @@ function deltask() {
   countt--;
   task_count.textContent = countt;
 }
-function signout(){
+function signout() {
   location.assign("index.html");
+}
+
+function selected() {
+  var alldel = document.getElementsByClassName("del");
+
+  for (var i = 0; i < alldel.length; i++) {
+    if (alldel[i].previousSibling.previousSibling.checked == true) {
+      alldel[i].parentNode.remove();
+      countcomp++;
+      var comp = document.getElementById("completed");
+      comp.textContent = countcomp;
+      var task_count = document.getElementById("count");
+      countt--;
+      task_count.textContent = countt;
+    }
+  }
 }

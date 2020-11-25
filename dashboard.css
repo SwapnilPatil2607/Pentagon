@@ -144,10 +144,14 @@ ul li ul {
   right: 0px;
   background-color: #0088e2;
   cursor: pointer;
-  display: none;
 }
-#seticon:hover #settings{
-  display:block;
+#delsel {
+  border: none;
+  border-radius: 3px;
+  background-color: #0088e2;
+  color: white;
+  padding: 0px 34px;
+  margin-top: 20px;
 }
 @media (max-width: 1200px) {
   .imp-icons {
