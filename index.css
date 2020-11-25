@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+      nav {
+        color: white;
+        display: flex;
+        padding: 10px 150px;
+        border-bottom: 0.5px solid #864d9c;
+        background-color: #9b59b6;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+      }
+    
+      #logo {
+        height: 80px;
+      }
+      .logo-div {
+        cursor: pointer;
+        display: flex;
+      }
+      .logo-div h3 {
+        line-height: 23px;
+        padding-top: 35px;
+        font-family: "Nerko One", cursive;
+        font-family: "Patrick Hand", cursive;
+        font-weight: bold;
+      }
+      .options-div {
+        padding: 40px 70px;
+      }
+      .options-div a {
+        opacity: 0.7;
+        cursor: pointer;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: medium;
+        padding: 10px 20px;
+      }
+      .options-div a:hover {
+        opacity: 1;
+      }
+      #sign-up {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 3px;
+      }
+      .sign-up-div {
+        background-color: #9b59b6;
+        text-align: center;
+        padding: 50px;
+        color: white;
+        font-weight: bold;
+      }
+      .sign-up-div h1 {
+        font-size: 45px;
+      }
+      .sign-up-div button {
+        border: none;
+        background-color: #d35400;
+        color: white;
+        padding: 5px 35px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+      .sign-up-div button:hover {
+        transition: 0.5s;
+        background-color: #e25a00;
+      }
+      .carousel-item {
+        height: 600px;
+      }
+      .footer ul li{
+         list-style: none;
+      }
+      .footer ul li:hover{
+        background-color: rgba(0, 0, 0, 0.329);
+        border-radius: 5px;
+      }
+      .footer{
+          padding: 100px 100px 0px 100px;
+      }
+      .social{
+         display: flex;
+      }
+      .social img{
+          height: 30px;
+        margin: 10px
+      }
+      @media screen and (max-width: 900px) {
+        .footer{
+          padding: 10px;
+      }
+      div.carousel-item.active{
+          margin: 0px;
+          padding: 0px;
+      }
+      }
+      @media screen and (max-width: 1000px) {
+        nav {
+          padding: 10px 10px;
+        }
+        .options-div{
+            padding: 50px 10px;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        .options-div {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        nav {
+          padding: 10px 10px;
+        }
+        .options-div {
+          padding: 10px 10px;
+        }
+        #logo {
+          height: 60px;
+        }
+        .logo-div h3 {
+        line-height: 23px;
+        padding-top: 15px;
+        font-family: "Nerko One", cursive;
+        font-family: "Patrick Hand", cursive;
+        font-weight: bold;
+      }
+      }
