@@ -32,6 +32,7 @@ body{
         padding: 40px 70px;
       }
       .options-div a {
+        color: white;
         opacity: 0.7;
         cursor: pointer;
         font-weight: bold;

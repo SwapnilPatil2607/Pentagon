@@ -17,7 +17,7 @@ nav {
   margin: 10px 170px 10px 10px;
 }
 .imp-icons {
-  margin-left: 730px;
+  margin-left: 600px;
 }
 .imp-icons img {
   height: 20px;
@@ -139,13 +139,7 @@ ul li ul {
 #task-container {
   margin-top: 30px;
 }
-#settings {
-  position: absolute;
-  top: 40px;
-  right: 0px;
-  background-color: #0088e2;
-  cursor: pointer;
-}
+
 #delsel {
   border: none;
   border-radius: 3px;
@@ -154,9 +148,25 @@ ul li ul {
   padding: 0px 40px;
   margin-top: 20px;
 }
-#delsel:hover{
+#delsel:hover {
   transition: 400ms;
   background-color: #004370;
+}
+#icons li {
+  display: inline-block;
+  position: relative;
+}
+#settings {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  background-color: #0088e2;
+  cursor: pointer;
+  padding: 10px 30px;
+  border: 0.5 px solid #0088e24d;
+}
+#seticon:hover #settings {
+  display: block;
 }
 @media (max-width: 1200px) {
   .imp-icons {

@@ -230,6 +230,7 @@ nav {
   text-decoration: none;
   font-size: medium;
   padding: 10px 20px;
+  color: white;
 }
 .options-div a:hover {
   opacity: 1;
