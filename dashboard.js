@@ -50,16 +50,22 @@ function signout() {
 
 function selected() {
   var alldel = document.getElementsByClassName("del");
-
+console.log( alldel.length);
+var stack=[];
   for (var i = 0; i < alldel.length; i++) {
     if (alldel[i].previousSibling.previousSibling.checked == true) {
-      alldel[i].parentNode.remove();
+      stack.push(alldel[i].parentNode);
+    
+    }
+  }
+  for(var j=stack.length-1;j>=0;j--){
+      stack[j].remove();
       countcomp++;
       var comp = document.getElementById("completed");
       comp.textContent = countcomp;
       var task_count = document.getElementById("count");
       countt--;
       task_count.textContent = countt;
-    }
   }
+  
 }
