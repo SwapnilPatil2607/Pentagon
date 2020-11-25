@@ -91,7 +91,9 @@ function select_all(){
 }
 
 function editing(){
-  event.target.previousSibling.previousSibling.remove()
+  event.target.previousSibling.previousSibling.previousSibling.remove();
+  event.target.previousSibling.previousSibling.remove();
+  event.target.previousSibling.remove();
   var input=document.createElement("input");
   input.setAttribute("type","text");
   var save=document.createElement("button");
@@ -120,7 +122,14 @@ function savechanges(){
       edit.textContent = "Edit";
       edit.setAttribute("class", "del");
       edit.addEventListener("click",editing);
-      event.target.parentNode.append(label,edit);
+      var checkbox=document.createElement("input");
+      checkbox.setAttribute("type","checkbox");
+      var del = document.createElement("button");
+      del.textContent = "Delete";
+      del.setAttribute("class", "del");
+      del.addEventListener("click", deltask);
+      event.target.parentNode.append(checkbox,label,del,edit);
+      console.log(event.target.parentNode);
       event.target.remove();
       break;
     }
