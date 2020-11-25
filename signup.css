@@ -1,0 +1,24 @@
+
+.box1{
+    margin-top:200px
+}
+.bgCol{
+    background-color:rgb(0, 96, 191)
+    }
+.tag{
+    margin-top:200px;
+    height:110px;
+    border-radius:100%;
+    background:rgb(26, 135, 243) !important;
+    transition: transform .2s;
+}
+
+.colorChange{
+    background:rgb(158, 245, 158) !important;
+}
+.colorChange2{
+    background:rgb(72, 159, 247) !important
+}
+.textColor{
+    color:rgb(141, 173, 248)
+}

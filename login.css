@@ -1,0 +1,17 @@
+.box{
+    margin-top:50px;
+    
+}
+
+
+.box1{
+    margin-top: 200px;
+}
+
+.bgCol{
+background-color:rgb(0, 96, 191)
+}
+.tag {
+    border-radius: 50%;
+    background:rgb(0,96,191) !important;
+  }
