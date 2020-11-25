@@ -102,7 +102,15 @@ function editing(){
   event.target.remove();
 }
 function savechanges(){
-  if(event.target.previousSibling.value1!=""){
-    console.log(event.target.previousSibling.value.length);
+  var inputval=event.target.previousSibling.value;
+  for(var i=0;i<inputval.length;i++){
+    if(inputval[0]=="" || inputval[0]==" "){
+      event.target.previousSibling.style.border="1px solid red";
+      break;
+    }
+    if(inputval[i]+inputval[i+1]=="  "){
+      event.target.previousSibling.style.border="1px solid red";
+      break;
+    }
   }
 }
