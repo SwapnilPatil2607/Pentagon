@@ -120,7 +120,7 @@ var date;
                     name: name,
                     email: email,
                     password: password,
-                    tasks: []
+                    tasks:[]
                     }
             
                     array.push(customerDetails)
