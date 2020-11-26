@@ -3,14 +3,10 @@ window.addEventListener("load",function(){
     btn.addEventListener("click",createData)
 })
 
-var userData=[]
-var userPassword=[]
-
 function createData(){
     event.preventDefault();
     var data=document.getElementById("form");
     let form= new FormData(data);
-    console.log(event.target);
     let firstName=form.get('firstName');
     let lastName=form.get('lastName');
     var userName=form.get('userName');
@@ -22,11 +18,37 @@ function createData(){
         password:password,
         email:email
     }
-    userData.push(payload)
-    localStorage.setItem('users',JSON.stringify(userData))
-   
+    if(localStorage.getItem("users")){
+        var users=localStorage.getItem("users");
+        users=JSON.parse(users);
+        console.log("line 1");
+        for(var i=0;i<users.length;i++){
+            if(users[i].name==userName){
+                alert("User Already Exist!");
+                return;
+            }
+        }
+        for(var j=0;j<users.length;j++){
+            if(users[j].email==email){
+                alert("User Already Exist!");
+                return;
+            }
+        }
+        users.push(payload);
+        localStorage.setItem('users',JSON.stringify(users));
+       
+    }
+    else{
+        localStorage.setItem("users","[]");
+        var users=localStorage.getItem("users");
+        users=JSON.parse(users);
+        users.push(payload);
+        localStorage.setItem('users',JSON.stringify(users));
+    }
+    
+    location.assign("login.html");
    
     // verifydata();
-    location.assign("login.html");
+ 
 }
 
