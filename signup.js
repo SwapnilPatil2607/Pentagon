@@ -120,9 +120,7 @@ var date;
                     name: name,
                     email: email,
                     password: password,
-                    transactions: [
-                                        {title:"", type: "", amount:0},
-                                    ]
+                    tasks:[]
                     }
             
                     array.push(customerDetails)
