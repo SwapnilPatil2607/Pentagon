@@ -1,21 +1,21 @@
-window.addEventListener('load',function(){
-    let btn=document.getElementById('createData')
-    btn.addEventListener('click',createData)
+window.addEventListener("load",function(){
+    let btn=document.getElementById("createData");
+    btn.addEventListener("click",createData)
 })
 
 var userData=[]
 var userPassword=[]
 
-function createData(event){
-    event.preventDefault()
-    let form=new FormData(document.getElementById('form'))
-    let firstName=form.get('firstName')
-    let lastName=form.get('lastName')
-    var userName=form.get('userName')
-    let email=form.get('email')
-    var password=form.get('password')
-
-console.log(userName)
+function createData(){
+    event.preventDefault();
+    var data=document.getElementById("form");
+    let form= new FormData(data);
+    console.log(event.target);
+    let firstName=form.get('firstName');
+    let lastName=form.get('lastName');
+    var userName=form.get('userName');
+    let email=form.get('email');
+    var password=form.get('password');
 
     var payload = {
         name:userName,
@@ -26,6 +26,7 @@ console.log(userName)
     localStorage.setItem('users',JSON.stringify(userData))
    
    
-    verifydata()
+    // verifydata();
+    location.assign("login.html");
 }
 
