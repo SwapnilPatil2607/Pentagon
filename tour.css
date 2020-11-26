@@ -297,6 +297,9 @@ nav {
   z-index: 1000;
   width: 100%;
 }
+nav a{
+  color:white;
+}
 
 #logo {
   height: 80px;
@@ -304,6 +307,7 @@ nav {
 .logo-div {
   cursor: pointer;
   display: flex;
+  
  
 }
 

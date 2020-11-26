@@ -7,7 +7,7 @@ body{
         display: flex;
         padding: 10px 150px;
         border-bottom: 0.5px solid #864d9c;
-        background-color: #9b59b6;
+        background-color: rgb(106, 76, 166);
         position: sticky;
         top: 0;
         z-index: 1000;
@@ -63,7 +63,7 @@ body{
         margin: 3px;
       }
       .sign-up-div {
-        background-color: #9b59b6;
+        background-color:rgb(106, 76, 166);
         text-align: center;
         padding: 50px;
         color: white;
