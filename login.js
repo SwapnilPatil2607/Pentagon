@@ -12,11 +12,11 @@ var userdata;
 function handleData(event){
     event.preventDefault();
     var form= new FormData(document.getElementById("form"))
-    let userName=form.get('username')
-    let password=form.get('password')
+    let userName=form.get('username');
+    let password=form.get('password');
+    
     var target = JSON.parse(localStorage.getItem('users'))
     console.log(target)
-    
     for(var i=0;i<target.length;i++){
         console.log(target[i].name)
         if(userName == target[i].name && password == target[i].password) {
